@@ -6,7 +6,7 @@
         "author": "J. R. R. Tolkien", 
         "img": "https://m.media-amazon.com/images/I/712cDO7d73L._SL1500_.jpg",
         "price": 11.99,
-        "rating": 4.7
+        "rating": 4.64
       },
       {
         "id": 2,
@@ -14,7 +14,7 @@
         "author": "George Orwell", 
         "img": "https://m.media-amazon.com/images/I/612ADI+BVlL._SL1500_.jpg",
         "price": 10.22,
-        "rating": 4.6
+        "rating": 4.32
       },
       {
         "id": 3,
@@ -22,23 +22,23 @@
         "author": "Bram Stoker", 
         "img": "https://m.media-amazon.com/images/I/71lhU-dnJeL._SL1500_.jpg",
         "price": 10.06,
-        "rating": 4.5
+        "rating": 4.13
       },
       {
         "id": 4,
         "title": "Frankenstein",
         "author": "Mary Shelley", 
         "img": "https://m.media-amazon.com/images/I/91HvX42+65L._SL1500_.jpg",
-        "price": 9.90,
-        "rating": 4.6
+        "price": 9.99,
+        "rating": 3.52
       },
       {
         "id": 5,
-        "title": "Animal Farm",
-        "author": "George Orwell", 
-        "img": "https://m.media-amazon.com/images/I/7137hqRUs7L._SL1200_.jpg",
-        "price": 17.78,
-        "rating": 4.8
+        "title": "Moby Dick",
+        "author": "Herman Melville", 
+        "img": "https://m.media-amazon.com/images/I/91xNmlf86yL._SL1500_.jpg",
+        "price": 12.55,
+        "rating": 4.26
       },
       {
         "id": 6,
@@ -46,7 +46,7 @@
         "author": "Harper Lee", 
         "img": "https://m.media-amazon.com/images/I/81aY1lxk+9L._SL1500_.jpg",
         "price": 13.99,
-        "rating": 4.7
+        "rating": 4.32
       },
       {
         "id": 7,
@@ -54,7 +54,7 @@
         "author": "Ray Bradbury", 
         "img": "https://m.media-amazon.com/images/I/61zc4fPQbIL._SL1500_.jpg",
         "price": 12.99,
-        "rating": 4.6
+        "rating": 4.07
       },
       {
         "id": 8,
@@ -62,7 +62,7 @@
         "author": "Homer", 
         "img": "https://m.media-amazon.com/images/I/81-ghHO6JyL._SL1500_.jpg",
         "price": 15.05,
-        "rating": 4.5
+        "rating": 3.78
       }
     ]
   }
