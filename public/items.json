@@ -1,0 +1,68 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "title": "The Hobbit",
+        "author": "J. R. R. Tolkien", 
+        "img": "https://m.media-amazon.com/images/I/712cDO7d73L._SL1500_.jpg",
+        "price": 11.99,
+        "rating": 4.7
+      },
+      {
+        "id": 2,
+        "title": "1984",
+        "author": "George Orwell", 
+        "img": "https://m.media-amazon.com/images/I/612ADI+BVlL._SL1500_.jpg",
+        "price": 10.22,
+        "rating": 4.6
+      },
+      {
+        "id": 3,
+        "title": "Dracula",
+        "author": "Bram Stoker", 
+        "img": "https://m.media-amazon.com/images/I/71lhU-dnJeL._SL1500_.jpg",
+        "price": 10.06,
+        "rating": 4.5
+      },
+      {
+        "id": 4,
+        "title": "Frankenstein",
+        "author": "Mary Shelley", 
+        "img": "https://m.media-amazon.com/images/I/91HvX42+65L._SL1500_.jpg",
+        "price": 9.90,
+        "rating": 4.6
+      },
+      {
+        "id": 5,
+        "title": "Animal Farm",
+        "author": "George Orwell", 
+        "img": "https://m.media-amazon.com/images/I/7137hqRUs7L._SL1200_.jpg",
+        "price": 17.78,
+        "rating": 4.8
+      },
+      {
+        "id": 6,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee", 
+        "img": "https://m.media-amazon.com/images/I/81aY1lxk+9L._SL1500_.jpg",
+        "price": 13.99,
+        "rating": 4.7
+      },
+      {
+        "id": 7,
+        "title": "Fahrenheit 451",
+        "author": "Ray Bradbury", 
+        "img": "https://m.media-amazon.com/images/I/61zc4fPQbIL._SL1500_.jpg",
+        "price": 12.99,
+        "rating": 4.6
+      },
+      {
+        "id": 8,
+        "title": "The Odyssey",
+        "author": "Homer", 
+        "img": "https://m.media-amazon.com/images/I/81-ghHO6JyL._SL1500_.jpg",
+        "price": 15.05,
+        "rating": 4.5
+      }
+    ]
+  }
