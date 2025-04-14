@@ -1,11 +1,11 @@
 "use client";
+import { BookOpenIcon, ShoppingCartIcon, MagnifyingGlassCircleIcon } from '@heroicons/react/24/solid';
 import { useState, useEffect } from "react";
-import { BookOpenIcon, ShoppingCartIcon } from '@heroicons/react/24/solid';
 import { Nunito } from 'next/font/google';
 import ItemCard from "@/components/ItemCard";
 
+// Import Nunito font and set default weight
 const nunito = Nunito({
-  subsets: ['latin'],
   weight: ['800'],
 });
 
@@ -16,6 +16,14 @@ const Home = () => {
   
   // Var to represent cart
   const [cart, setCart] = useState(0);
+
+  // Var to store search query
+  const [searchQuery, setSearchQuery] = useState("");
+
+  // Var to store filtered items based on search query
+  const filteredItems = items.filter((item) => {
+    return item.title.toLowerCase().includes(searchQuery.toLowerCase());
+  });
 
   // Get items from items.json once components are rendered
   useEffect(() => {
@@ -32,33 +40,41 @@ const Home = () => {
   // Function to handle adding item to cart
   const addToCart = () => {
     setCart(cart + 1);
-    console.log(cart);
   }
 
   return (
-    // TODO: ADD SEARCH BAR
     <div className="space-y-8 p-4">
       <nav className={`p-4 flex text-white items-center justify-between shadow-md ${nunito.className}`} style={{ backgroundColor: "#00C763", borderRadius: "10px" }}>
-        {/* Logo and Title */}
         <div className="flex text-3xl font-semibold items-center gap-x-2">
           <BookOpenIcon className="w-10 h-10" />
           MiniMart Bookstore
         </div>
         
-        {/* Cart Icon */}
-        <div className="flex items-center gap-x-2 border-2 border-white rounded-full py-1 px-3">
-          <ShoppingCartIcon className="w-7 h-7" />
-          <span>{cart}</span>
+        <div className="flex items-center gap-x-4">
+          <div className="flex items-center gap-x-2 border-2 border-white rounded-full px-2">
+            <input
+              className="bg-transparent text-white px-4 py-2 focus:outline-none focus:ring-0 background-color: transparent"
+              type="text"
+              placeholder="Search..."
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            <MagnifyingGlassCircleIcon className="w-8 h-8" />
+          </div>
+
+          <div className="flex items-center gap-x-2 border-2 border-white rounded-full py-1 px-3">
+            <ShoppingCartIcon className="w-7 h-7" />
+            <span>{cart}</span>
+          </div>
         </div>
       </nav>
-
+      
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {items.map((item, index) => (
+        {filteredItems.map((item, index) => (
           < ItemCard
-          item={item}
-          key={index}
-          src={item.img}
-          addToCart={addToCart}
+            item={item}
+            key={index}
+            src={item.img}
+            addToCart={addToCart}
           />
         ))}
       </div>
